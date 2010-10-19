@@ -1,0 +1,42 @@
+<html t:type="layout" title="gwt Index"
+      t:sidebarTitle="Current Time"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"
+      xmlns:p="tapestry:parameter">
+        <!-- Most of the page content, including <head>, <body>, etc. tags, comes from Layout.tml -->
+
+    <p>test ${message:greeting}</p>
+    
+    <t:hello2/>
+    
+    <t:hello stuff="none" label="hello" name="name" greeting="greeting"/>
+    
+        <script  t:type="any" type="text/javascript" language="javascript" src="gwt:hellogwt/hellogwt.nocache.js"></script>
+    
+
+<table align="center">
+      <tr>
+        <td colspan="2" style="font-weight:bold;">Please enter your name:</td>        
+      </tr>
+      <tr>
+        <td id="nameFieldContainer"></td>
+        <td id="sendButtonContainer"></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="color:red;" id="errorLabelContainer"></td>
+      </tr>
+    </table>
+    <p:sidebar>
+
+        <p>
+            Just to prove this is live:
+        </p>
+
+        <p>The current time is: ${currentTime}.</p>
+
+
+        <p>
+            [<t:pagelink page="Index">refresh</t:pagelink>]
+        </p>
+    </p:sidebar>
+
+</html>

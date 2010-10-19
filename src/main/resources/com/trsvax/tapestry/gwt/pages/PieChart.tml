@@ -1,0 +1,13 @@
+<html t:type="layout" title="gwt Index"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"
+      xmlns:p="tapestry:parameter">
+        <!-- Most of the page content, including <head>, <body>, etc. tags, comes from Layout.tml -->
+
+    <p>Pie Chart</p>
+    
+    <t:widgets.hellowidget />
+    <t:widgets.piechartwidget width="200" height="200"/>
+    <t:widgets.annotatedtimelinewidget width="700px" height="400px"/>
+
+
+</html>
